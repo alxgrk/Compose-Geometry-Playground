@@ -3,12 +3,10 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+local.properties
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+.idea/*
 *.iws
 *.iml
 *.ipr
@@ -41,11 +39,4 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-/java_pid87807.hprof
-/java_pid22863.hprof
-/java_pid70958.hprof
-/java_pid78471.hprof
-/java_pid85068.hprof
-/java_pid85683.hprof
-/java_pid87027.hprof
-/java_pid87726.hprof
+/java_*.hprof
