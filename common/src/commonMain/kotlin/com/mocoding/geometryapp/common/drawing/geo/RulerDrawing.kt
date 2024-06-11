@@ -14,7 +14,6 @@ import com.mocoding.geometryapp.common.utils.lineTo
 import com.mocoding.geometryapp.common.utils.moveTo
 import com.mocoding.geometryapp.common.utils.rotateBy
 import com.mocoding.geometryapp.common.utils.shrinkAngle
-import org.jetbrains.skia.Font
 import kotlin.math.abs
 
 data class RulerDrawing(

@@ -1,14 +1,15 @@
 plugins {
-    id("org.jetbrains.compose")
-    id("com.android.application")
+    alias(libs.plugins.jetbrainsCompose)
+    alias(libs.plugins.composeCompiler)
+    alias(libs.plugins.androidApplication)
     kotlin("android")
 }
 
-group "com.mocoding.geometryapp"
-version "1.0-SNAPSHOT"
+group = "com.mocoding.geometryapp"
+version = "1.0-SNAPSHOT"
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
@@ -17,17 +18,18 @@ dependencies {
 }
 
 android {
-    compileSdkVersion(33)
+    namespace = "com.mocoding.geometryapp.android"
+    compileSdk = 34
     defaultConfig {
         applicationId = "com.mocoding.geometryapp.android"
-        minSdkVersion(24)
-        targetSdkVersion(33)
+        minSdk = 24
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0-SNAPSHOT"
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     buildTypes {
         getByName("release") {

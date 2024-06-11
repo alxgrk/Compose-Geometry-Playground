@@ -8,8 +8,8 @@ import androidx.compose.material.Colors
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.ArrowForward
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -38,7 +38,7 @@ fun ToolsPanel(
             enabled = isUndoEnabled
         ) {
             Icon(
-                Icons.Default.ArrowBack,
+                Icons.AutoMirrored.Filled.ArrowBack,
                 contentDescription = "Undo",
                 tint = colors.onBackground.copy(
                     alpha = if (isUndoEnabled) 1f else 0.4f
@@ -53,7 +53,7 @@ fun ToolsPanel(
             enabled = isRedoEnabled,
         ) {
             Icon(
-                Icons.Default.ArrowForward,
+                Icons.AutoMirrored.Filled.ArrowForward,
                 contentDescription = "Redo",
                 tint = colors.onBackground.copy(
                     alpha = if (isRedoEnabled) 1f else 0.4f

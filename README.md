@@ -34,7 +34,7 @@ Geometry playground made using Compose multiplatform that works for both android
 Open project in Intellij IDEA or Android Studio and run "android" configuration.
 
 ## What is next ?
-- The next challenge is to build web and ios versions using the maximum ammount of existing code.
+- The next challenge is to build web and ios versions using the maximum amount of existing code.
 
 ## Acknowledgements
 
